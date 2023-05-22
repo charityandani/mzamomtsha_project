@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  box-shadow: 5px  solid ;
+  color: navy;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  padding: .5px;
+  color: black;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: navy;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+button[type="submit"]:hover {
+  background-color: navy;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="file"]::file-selector-button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+input[type="file"]::before {
+  content: 'Select File';
+  display: inline-block;
+  background-color: navy;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="file"]:hover::before {
+  background-color: blue;
+}
+
+.form-box{
+    width:100%;
+    max-width:500px;
+    
+    padding:50px 60px 70px;
+    /*position:absolute;*/
+    /*top:50%;
+    
+    
+   
+    */
+    
+   
+    background-color: #97d0f1;
+}
+
+.HeadlineSearchContainer {
+  
+  top: 100px;
+  margin: auto;
+  height: 159px;
+}
+
+.SearchCharacterStyle {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 24.82px;
+  text-align: left;
+}
+
+.searchrespond {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 24.82px;
+  text-align: left;
+}
+
+#appSuccess{
+  display: none;
+}
+
+#appDeny {
+  display: none;
+}
+
+#fillForm {
+  display: none;
+}
+
+.autocomplete {
+  width: 300px;
+}
+
+.button{
+  float: right;
+}
+</style>
+<body>
+ 
+    <div class="HeadlineSearchContainer">
+        <form id="vacancyForm">
+          <h2>Apply for Mathematics Teacher Position @ Mzamomtsha </h2>
+          
+          
+          <label for="position">Position</label>
+          <input type="text" id="position" name="position" required>
+          <label for="resume">Insert Your Picture</label>
+          <input type="file" id="resume" name="picture" accept="image/*" >
+          
+        
+
+          <label for="resume">Resume/CV</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+          <button type="submit">Submit application</button></a> 
+         
+      </form>
+         
+</body>
+</html>

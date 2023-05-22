@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Vacancy</title>
+</head>
+<body>
+    <style>
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+header {
+	background-color: blue;
+	color: #fff;
+	padding: 20px;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.job {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+.apply-btn {
+	background-color: blue;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+#form-container {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom:5px;
+}
+
+    </style>
+	<header>
+		<h1>Job Vacancy</h1>
+	</header>
+	<main>
+		<section class="job">
+			<h2>Job Title: Secondary School Mathematics Teacher</h2>
+			<p>We are looking for an experienced Mathematics Teacher to join our team.</p>
+			<h3>Job Requirements:</h3>
+			<ul>
+               <li> Bachelor's degree in Mathematics or related field</li>
+<li>At least 3 years of teaching experience</li>
+<li>Strong knowledge of Mathematics curriculum for secondary schools</li>
+<li>Excellent communication skills</li>
+<li>Ability to work with diverse groups of students and colleagues</li>
+<li>Experience with modern teaching methods, such as project-based learning and flipped classroom</li>
+			</ul>
+            <br>
+            <h3>Job Description:</h3>
+			<ul>
+               <li> We are seeking a highly motivated and experienced Mathematics Teacher to join our secondary school teaching team. </li>
+<li>The successful candidate will be responsible for delivering high-quality instruction to our students and promoting a positive learning environment. </li>
+<li> This position requires strong communication skills, the ability to work well with others, and a passion for teaching Mathematics.</li>
+<li>The ideal candidate should have experience with modern teaching methods, such as project-based learning and flipped classroom, and be familiar with current Mathematics curriculum for secondary schools.</li>
+<br>
+<br>
+<li>To apply for this position, please submit your CV and a cover letter highlighting your qualifications and teaching philosophy. Only shortlisted candidates will be contacted for an interview.</li>
+			</ul>
+			<a href="vacancyForm.html"><button class="apply-btn" onclick="showForm()">Apply Now</button></a>
+		</section>
+		<section id="form-container" class="hidden">
+			<h2>Apply for Software Developer</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="resume">Resume:</label>
+				<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+				<button type="submit">Submit Application</button>
+			</form>
+			<button class="close-btn" onclick="hideForm()">Close</button>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mzamo Events</title>
+    <link rel='stylesheet' href='Mzamo_css.css'/>
+    <link rel="stylesheet" href="nav.css">
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="bttn.css"/>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="mainJS.js"></script>
+    <script src="nav.js"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ff9ce49235.js" crossorigin="anonymous"></script>
+    
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <style> 
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      footer {
+        background-color: #0A4876;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head> 
+
+<body>
+
+   <!--<section class = "header">
+
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img alt="school logo" src="school_logo.png"></a>
+        </div>
+        <div class="main_list" id="mainListDiv">
+          <ul>
+            <li><a href="index.html" id="tab-color">HOME</a></li>
+            <li><a href="About us.html" id="tab-color1">ABOUT US</a></li>
+            <li><a href="Events.html" id="tab-color2">EVENTS</a></li>
+            <li><a href="FAQs.html" id="tab-color3">FAQs</a></li>
+            <li><a href="newContactUs.html" id="tab-color4">CONTACT</a></li>
+            <li><a href="poplogin.html" id="tab-color5">LOGIN</a></li>          
+          </ul>
+
+        <script>
+
+          //NAV BAR COLOUR CHANGER
+          document.getElementById("tab-color").onmouseover = function() {mouseOver()};
+          document.getElementById("tab-color1").onmouseover = function() {mouseOver1()};
+          document.getElementById("tab-color2").onmouseover = function() {mouseOver2()};
+          document.getElementById("tab-color3").onmouseover = function() {mouseOver3()};
+          document.getElementById("tab-color4").onmouseover = function() {mouseOver4()};
+          document.getElementById("tab-color5").onmouseover = function() {mouseOver5()};
+
+          document.getElementById("tab-color").onmouseout = function() {mouseOut()};
+          document.getElementById("tab-color1").onmouseout = function() {mouseOut1()};
+          document.getElementById("tab-color2").onmouseout = function() {mouseOut2()};
+          document.getElementById("tab-color3").onmouseout = function() {mouseOut3()};
+          document.getElementById("tab-color4").onmouseout = function() {mouseOut4()};
+          document.getElementById("tab-color5").onmouseout = function() {mouseOut5()};
+
+          //HOME
+          function mouseOver(){
+            document.getElementById("tab-color").style.color = "green";
+          }
+          function mouseOut(){
+            document.getElementById("tab-color").style.color = "white";
+          }
+
+          //ABOUT US
+          function mouseOver1(){
+            document.getElementById("tab-color1").style.color = "green";
+          }
+          function mouseOut1(){
+            document.getElementById("tab-color1").style.color = "white";
+          }
+
+          //EVENTS
+          function mouseOver2(){
+            document.getElementById("tab-color2").style.color = "green";
+          }
+          function mouseOut2(){
+            document.getElementById("tab-color2").style.color = "white";
+          }
+
+          //FAQs
+          function mouseOver3(){
+            document.getElementById("tab-color3").style.color = "green";
+          }
+          function mouseOut3(){
+            document.getElementById("tab-color3").style.color = "white";
+          }
+
+          //FAQs
+          function mouseOver4(){
+            document.getElementById("tab-color4").style.color = "green";
+          }
+          function mouseOut4(){
+            document.getElementById("tab-color4").style.color = "white";
+          }
+
+          function mouseOver5(){
+            document.getElementById("tab-color5").style.color = "green";
+          }
+          function mouseOut5(){
+            document.getElementById("tab-color5").style.color = "white";
+          }
+        </script>
+
+
+        </div>
+      </div>
+     </nav>
+    </nav>
+</section>-->
+
+      <!-- site-navbar start -->
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <!-- site logo -->
+            <a href="index.html" class="site-logo"><img alt="school logo" src="school_logo.png" class="logo"></a>
+    
+            <!-- site menu/nav -->
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="About us.html">ABOUT</a></li>
+              <li><a href="Events.html">EVENTS</a></li>
+              <li><a href="FAQs.html">FAQs</a></li>
+              <li><a href="ContactUs.html">CONTACT US</a></li>
+              <li><a href="#"><button style="border-radius: 10px; padding: 1px; border-color: blue; background-color: blue; color: white;" onclick="viewLogin()">LOGIN</button></a></li>
+            </ul>
+    
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div><!-- navbar-area end -->
+
+<section class="header">
+  <div class="text-box">
+    <h1>Events</h1>
+  </div>
+</section>
+
+<!--EVENTS SECTION-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+  <h1>
+    Our School Events
+  </h1>
+  <div class="row">
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card">     
+        <img alt="learners in a classroom" src="backtosch.jfif" class="card-img-top">
+          <div class="card-block">
+            <h3 class="card-title">
+              Back to School
+            </h3>
+            <p> Host a fun and exciting event to welcome students back to school every year...</p> 
+          </div>
+      </div>  
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <img alt="school kids posing with laptops" src="donations.jpg" class="card-img-top">       
+          <div class="card-block">
+            <h3 class="card-title" >Donation</h3>  
+              <p>
+                Generous Donation allows the school to upgrade computer lab equipment...
+              </p> 
+          </div>
+      </div>   
+    </div>
+        
+    <div class="col-md-6 col-lg-3">           
+      <div class="card">
+        <img alt="learners with certificates" src="pricing.jpg" class="card-img-top">
+          <div class="card-block">
+            <h3 class="card-title"> 
+              Annual prize Day
+            </h3>
+            <p>
+              Annual Prize Day recognizes the academic prowess of top pupils per subject...
+            </p> 
+          </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <img alt="cultural performance on stage" src="heritage.jpg" class="card-img-top">         
+          <div class="card-block">
+            <h3 class="card-title">
+              Cultural Day
+            </h3>       
+            <p>
+              We organize cultural day to teach our children the key values of different cultures...
+            </p>       
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<p>
+We hope you will gain a sense of why we believe our educational school system is the perfect preparation for our puplis
+</p><br>
+
+
+<button>Explore More</button>
+
+<p><br>
+
+Mzamotsha lives be the words of late Nelson Mandela:
+</p>
+<blockquote>
+  <p style = color:blue>  "Education is the most powerful weapon which you can use to change the world."</p>
+</blockquote> <br>-->
+<br>
+<br>
+<br>
+<br>
+
+<!--FACILITIES-->
+<section class = "facilities">
+  <h2>Upcoming Events </h2>
+  
+<div class ="row">
+  <div class = "facilities-col">
+    <img alt="schoolkids playing basketball" src ="basketB.jpg">
+  
+    <h3>Basketball match this week</h3>
+    <p>Our largest basket ball match ever!</p>
+    <h3>17 MAR , 2023</h3>
+  </div>
+  
+  <div class = "facilities-col">
+    <img alt="debate animation" src ="debatesch.png">
+    
+    <h3>Social discussions </h3>
+    <p>Our first ever social discussion </p>
+    <h3>31 MAR , 2023</h3>
+  </div>
+</div>
+    <!--<div class="center">
+      <div class="outer button">
+          <a href="game_page.html"><button>Play Games Here!!</button></a>
+          <span></span>
+          <span></span>
+      </div>
+    </div>-->
+    <!-- Button to trigger the modal -->
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" 
+  integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+          max: 50,
+          speed: 900
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".card"));
+  </script>
+
+<script type="text/javascript">
+VanillaTilt.init(document.querySelector(".facilities-col"), {
+  max: 50,
+  speed: 900
+});
+
+//It also supports NodeList
+VanillaTilt.init(document.querySelectorAll(".facilities-col"));
+
+</script>
+  
+</section>
+<!--<div class="d-flex justify-content-center">-->
+  <!--<button 
+    type="button" 
+    class="btn btn-primary mb-3 text-center w-25 rounded-5 position-relative text-uppercase" 
+    data-toggle="modal" 
+    data-target="#myModal"
+  >
+    Click here to play games
+  </button>-->
+
+<!-- Modal -->
+  <!--<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">-->
+        <!-- Modal header -->
+        <!--<div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>-->
+        <!-- Modal body -->
+        <!--<div class="modal-body">
+          <p>Click the button below to play some games:</p>
+          <button type="button" class="btn btn-success text-center" onclick="location.href='game_page.html';">Play games here!</button>
+        </div>-->
+        <!-- Modal footer -->
+        <!--<div class="modal-footer">
+          <button type="button" class="btn btn-danger text-center" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+
+  <a href="#" class="to-top" aria-label="Back To Top">
+    <i class="fas fa-angle-double-up"></i>
+  </a>
+
+  <section class ="footer" style="background-color: darkgrey;" >
+    <h4></h4>
+    <div class="address">
+       <address>
+           <label>Contact Number: 0156789992</label><br>
+           <label>Location: Mfuleni, Cape Town, Western Cape</label><br>
+       </address>
+    </div>
+        <div class= "icons">
+          <a href="https://www.facebook.com/pages/category/middle-school/Mzamomtsha-Primary-School-105759048369027/posts/" aria-label="Visit our Facebook page"><i class= "fa fa-facebook fa-2xl"></i></a>
+          <a href="https://web.whatsapp.com/" aria-label="Contact us through Whatsapp"><i class="fa fa-whatsapp"></i></a> 
+          <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" aria-label="Visit our Twitter page"><i class = "fa fa-twitter"></i></a>
+   
+          <p>
+            <address>     
+              Copyright © 2023 Mzamomtsha Primary School
+            </address>
+          </p>
+    
+        </div>
+        <p>Made by Office heros</p>
+    </section> 
+</body>
+</html>

@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.cdnfonts.com/css/poppins');
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+.container{
+    background-color:rgba(0,0,0,0.20);
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 10);
+    margin-top: 15px;
+}
+.container header{
+    font-size: 20px;
+    font-weight: 600px;
+    color: gray;
+    position: relative;
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color:#fff;
+}
+.container form .form{
+  
+   background-color: #fff;
+}
+.container header::before{
+content: "";
+position: absolute;
+left: 0;
+bottom: -2px;
+height: 4px;
+border-radius: 8px;
+width: 30px;
+background-color: #4070f4;
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .details.ID{
+    margin-top: 50px;
+}
+.container form .title{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color:black;
+    display: block;
+    margin-bottom: 8px;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*Text fiels*/
+form .fields .input-field{
+display:flex ;
+padding: 5px;
+flex-direction: column;
+width: 50%;
+width: calc(100% / 3 -15px);
+margin: 4px 0;
+}
+.input-field input{
+height: 42px;
+margin: 8px 0;
+border: 1px solid #aaa;
+border-radius: 5px;
+font-size: 14px;
+font-weight: 400;
+color: #333;
+outline: none;
+
+}
+.grade label{
+    font-size: 15px;
+    font-weight: 500;
+    color: black; 
+}
+.input-field label{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.input-radio label{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field input[type="date"]{
+    color:#707070;
+}
+.input-field input[type="date"]:valid{
+    color:#333;
+}
+.grade input{
+    padding: 3px;
+    margin: 3;  
+}
+.input-radio input{
+    padding: 3px;
+    margin: 3;
+}
+.container form button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+    max-width: 100px;
+    border: none;
+    outline: none;
+    color:#fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    cursor: pointer;
+    background-color:blue;
+    color: whitesmoke;
+}
+.container form button{
+    font-size: 16px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: blue;
+}
+form button i {
+    margin:0 5px;
+}
+form button i,
+ form .SubmitTextt i:hover{
+    background-color: blue;
+    width: 100%;
+ }
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button, .SubmitText{
+margin-right: 15px;
+width: 190000px;
+}
+form .buttons i{
+transform: rotate(180deg);
+}
+@media (max-width:750px) {
+    form .fields .input-field{
+        display: flex;
+        flex-direction: column;
+        margin: 4px 0;
+        width: calc(100% / 2 - 15px);
+    }
+    
+}
+@media (max-width:550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+    
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    text-align: center;
+}
+.SubmitTextt{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

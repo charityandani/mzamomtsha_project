@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+   
+}
+.center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.outer{
+    position: relative;
+    margin: 0 50px;
+    background: linear-gradient(#14ffe9, #ffeb3b,#ff00e0);
+}
+.button{
+    height: 70px;
+    width: 220px;
+    border-radius: 50px;
+}
+.outer button, .outer span{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.outer button{
+    background: #111;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    z-index: 9;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+.button button{
+    height: 60px;
+    width: 210px;
+    border-radius: 50px;
+}
+.circle button{
+    height: 10px;
+    width: 180px;
+    border-radius: 50%;
+}
+.outer:hover span:nth-child(1){
+    filter: blur(7px);
+}
+.outer:hover span:nth-child(2){
+    filter: blur(14px);
+}
+.outer:hover{
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+@media (maxiwidth:640px){
+    .center{
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
+    .outer{
+        margin:50px 0px;
+    }
+    }

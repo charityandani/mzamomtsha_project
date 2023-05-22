@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Vacancy</title>
+</head>
+<body>
+    <style>
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  box-shadow: 5px  solid ;
+  color: navy;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  padding: .5px;
+  color: black;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: navy;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+button[type="submit"]:hover {
+  background-color: navy;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="file"]::file-selector-button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+input[type="file"]::before {
+  content: 'Select File';
+  display: inline-block;
+  background-color: navy;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="file"]:hover::before {
+  background-color: blue;
+}
+
+.form-box{
+    width:100%;
+    max-width:500px;
+    
+    padding:50px 60px 70px;
+    /*position:absolute;*/
+    /*top:50%;
+    
+    
+   
+    */
+    
+   
+    background-color: #97d0f1;
+}
+
+.HeadlineSearchContainer {
+  
+  top: 100px;
+  margin: auto;
+  height: 159px;
+}
+
+.SearchCharacterStyle {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 24.82px;
+  text-align: left;
+}
+
+.searchrespond {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 24.82px;
+  text-align: left;
+  margin-top: -50px;
+  margin-left: 150px;
+}
+
+#appSuccess{
+  display: none;
+}
+
+#appDeny {
+  display: none;
+}
+
+#fillForm {
+  display: none;
+}
+
+.autocomplete {
+  width: 300px;
+}
+
+.button{
+  float: right;
+}
+
+    </style>
+   <!--<div class = "form-box">--> 
+
+
+
+
+    <div class="HeadlineSearchContainer">
+    <form id="vacancyForm">
+      <h2>Apply for Mathematics Teacher Position @ Mzamomtsha </h2>
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+     
+    
+      
+      
+     
+  </form>
+     
+       <!-- <div class="SearchCharacterStyle">
+          <h>Application</h>
+        </div>-->
+        <div id="mySearch" class="searchbox_box">
+
+          <form autocomplete="off" name="myForm" id="search-from">
+            <div class="autocomplete">
+
+        <!--<input id="myInput" type="text" name="qualification" placeholder="Enter your qualification">-->
+        <form id="vacancyForm">
+        
+        
+        <label for="experience">Cover letter</label>
+        <textarea id="myInput" name="qualification" required></textarea>
+        
+      
+       <button type="submit">Submit Application</button>
+    </form>
+              <i class="searchbutton"></i>
+            </div>
+           <button type="submit">Status</button></a> 
+           <div class = "button">
+             <a href ="status.html"><button type="submit">Next</button></a> 
+           </div>
+           
+            <div class="searchrespond" id="searchRespond">
+              <h2 id="appSuccess">Dear applicant you have met the criteria for next evaluation press next to proceed</h2>
+              <h2 id="appDeny">Applicant does not meet criteria for next evaluation</h2>
+              <h2 id="fillForm">Please fill in form</h2>
+            </div>
+
+          </form>
+        </div>
+        </div>
+<!--<form id="vacancyForm">
+            <h2>Mathematics teacher FET (grades 10-12) Mzamomtsha  </h2>
+            
+
+
+            <label for="Highest">Highest Qualification</label>-->
+           
+
+           <!--<label for="name">Full Name</label>
+           <input type="text" id="name" name="name" required>
+           
+           <label for="email">Email</label>
+           <input type="email" id="email" name="email" required>
+           
+           <label for="phone">Phone</label>
+           <input type="tel" id="phone" name="phone" required>
+           
+           
+           <label for="Saice certificate">Saice certificate</label>
+           <input type="text" id="saice certificate" name="saice certificate" required>
+
+           <label for="Years in experience">Years in experience</label>
+           <input type="text" id="years in experience" name="years in experience" required>
+
+           <label for="Province">Province currently located in</label>
+           <input type="text" id="province" name="province" required>
+
+
+           <label for="resume">Insert Your Picture</label>
+           <input type="file" id="resume" name="picture" accept="image/*" > 
+            
+            <label for="experience">Work Experience</label>
+            <textarea id="experience" name="experience" required></textarea>-->
+            
+            <!--<label for="resume">Cover Letter</label>
+            <textarea id="experience" name="experience" required></textarea>
+          
+            <label for="resume">Resume/CV</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            
+            <button type="submit">Submit Application</button>
+        </form>-->
+    </div>
+  
+      <script>
+       /* const form = document.getElementById('vacancyForm');
+            form.addEventListener('submit', function(event) {
+              event.preventDefault(); // prevent the default form submission
+             
+              const formData = new FormData(form); // create a new FormData object
+             
+              // send the form data using fetch()
+              fetch('/article/formdata/post/user-avatar', {
+                method: 'POST',
+                body: formData
+              })
+              .then(response => response.json())
+              .then(data => console.log(data))
+              .catch(error => console.error(error));
+              for (const [key, value] of formData.entries()) {
+              console.log(key, value);
+              
+            }
+            });*/
+
+           /*function getUserData(){
+            var qualification = document.getElementById("qualification");
+            /*var saice = document.getElementById("saice certificate");
+            var experience = document.getElementById("years in experience");
+            var province = document.getElementById("province");
+
+            return qualification;
+
+           }; */
+            
+          
+
+
+           
+       
+        /* var regex = /\b(?:one|two|three)\b/gi;
+
+        document.write(sub.match(regex));*/
+
+ 
+
+        /*function HQ(subject, quali)
+
+        {
+          var subject = getUserData();
+          var quali = ["BEd","Bachelor of education","BACHELOR OF EDUCATION","Bachelor of education in mathematics"];
+
+            var regexmat = /[() {[*+?.\\^$|]/g;
+            
+
+            for (var i = 0; i< words.length;i++)
+            {
+                words[i] = words[i].replace(regexmat,"\\$&");
+            }
+
+            var regex = new RegExp("\\b(?:"+ words.join("|")+ ")\\b", "g");
+
+          return document.write("Success :",subject.match(regex) || []);
+
+        }
+
+        HQ(subject, quali); */
+
+const input = document.querySelector('#myInput');
+const appSuccess = document.querySelector('#appSuccess');
+const appDeny = document.querySelector('#appDeny');
+const searchResult = document.querySelector('#searchResult');
+const fillForm = document.querySelector('#fillForm');
+const qualification = ["BEd", "Bachelor of education", "Bachelor of education mathematics and science", "Bandung", "Bali", "Batam", "Batu", "Bekasi", "Bengkulu", "Binjai", "Blitar", "Bogor", "Bukittinggi", "Cimahi", "Cirebon", "Denpasar", "Depok", "Dumai", "Gunungsitoli", "Jakarta", "Jambi", "Kediri", "Langsa", "Lhokseumawe", "Lombok", "Lubuklinggau", "Madiun", "Magelang", "Malang", "Medan", "Metro", "Mojokerto", "Padang", "Padang Sidempuan", "Padangpanjang", "Pagar Alam", "Palembang", "Pangkal Pinang", "Pariaman", "Pasuruan", "Payakumbuh", "Pekalongan", "Pekanbaru", "Pematangsiantar", "Prabumulih", "Prigi", "Probolinggo", "Sabang", "Salatiga", "Sawahlunto", "Semarang", "Serang", "Sibolga", "Solo", "Subussalam", "Sukabumi", "Sumbawa", "Sungaipenuh", "Surabaya", "Surakarta", "Tangerang", "Tangerang Selatan", "Tanjungbalai", "Tanjungpinang", "Tasikmalaya", "Tebing Tinggi", "Tegal", "Yogyakarta"];
+
+document.querySelector('#search-from').addEventListener('submit', e => {
+  e.preventDefault();
+  const searchTerm = input.value.trim().toLowerCase();
+
+  fillForm.style.display = 'none';
+  appSuccess.style.display = 'none';
+  appDeny.style.display = 'none';
+  
+  if (!searchTerm) {
+    fillForm.style.display = 'block';
+    return;
+  }
+
+  let matches = qualification.filter(qualification => qualification.toLowerCase() == searchTerm);
+  if (matches.length) {
+    appSuccess.style.display = 'block';
+  } else {
+    appDeny.style.display = 'block';
+  }
+});
+
+
+        const form = document.getElementById('vacancyForm');
+            form.addEventListener('submit', function(event) {
+              event.preventDefault(); // prevent the default form submission
+             
+              const formData = new FormData(form); // create a new FormData object
+             
+              // send the form data using fetch()
+              fetch('/article/formdata/post/user-avatar', {
+                method: 'POST',
+                body: formData
+              })
+              .then(response => response.json())
+              .then(data => console.log(data))
+              .catch(error => console.error(error));
+              for (const [key, value] of formData.entries()) {
+              console.log(key, value);
+              
+            }
+            });
+            
+     
+
+      </script>
+</body>
+</html>
